@@ -10,4 +10,4 @@ The Stride website introduces an application designed to enhance productivity by
 
 ## Online Demo
 
-💻 [Stride online Demo]([https://devseni.github.io/Stride-Website/])
+💻 [Stride online Demo]([https://devseni.github.io/Stride-Website])
