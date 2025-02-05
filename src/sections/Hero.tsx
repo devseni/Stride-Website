@@ -4,8 +4,7 @@ import ArrowRight from "@/assets/arrow-right.svg";
 import cogImage from "@/assets/cog.png";
 import cylinderImage from "@/assets/cylinder.png";
 import noodleImage from "@/assets/noodle.png";
-import { useScroll, useTransform } from "motion/react";
-import * as motion from "motion/react-client";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
 
@@ -17,7 +16,7 @@ const Hero = () => {
     offset: ["start end", "end start"],
   });
 
-  const translateY: any = useTransform(scrollYProgress, [0, 1], [150, -150]);
+  const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
 
   return (
     <section
