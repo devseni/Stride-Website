@@ -140,9 +140,9 @@ const Header = () => {
                 initial="initial"
                 animate="open"
               >
-                {navLinks.map((link, i) => (
+                {navLinks.map((link, index) => (
                   <motion.div
-                    key={link.href}
+                    key={index}
                     className="overflow-hidden"
                     variants={{
                       initial: { y: 50, opacity: 0 },

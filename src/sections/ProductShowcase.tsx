@@ -4,8 +4,8 @@ import Image from "next/image";
 import productImage from "@/assets/product-image.png";
 import pyramidImage from "@/assets/pyramid.png";
 import tubeImage from "@/assets/tube.png";
-import * as motion from "motion/react-client";
-import { useScroll, useTransform } from "motion/react";
+import { motion, useScroll, useTransform } from "framer-motion";
+
 import { useRef } from "react";
 
 const ProductShowcase = () => {
@@ -16,8 +16,8 @@ const ProductShowcase = () => {
     offset: ["start end", "end start"],
   });
 
-  const translateY: any = useTransform(scrollYProgress, [0, 1], [250, -250]);
-  const rotate: any = useTransform(scrollYProgress, [0, 1], [0, 180]);
+  const translateY = useTransform(scrollYProgress, [0, 1], [250, -250]);
+  const rotate = useTransform(scrollYProgress, [0, 1], [0, 180]);
 
   return (
     <section

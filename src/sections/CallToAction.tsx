@@ -4,8 +4,7 @@ import Image from "next/image";
 import ArrowRight from "@/assets/arrow-right.svg";
 import starImage from "@/assets/star.png";
 import springImage from "@/assets/spring.png";
-import * as motion from "motion/react-client";
-import { useScroll, useTransform } from "motion/react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 const CallToAction = () => {
@@ -16,8 +15,8 @@ const CallToAction = () => {
     offset: ["start end", "end start"],
   });
 
-  const translateY: any = useTransform(scrollYProgress, [0, 1], [150, -150]);
-  const rotateStar: any = useTransform(scrollYProgress, [0, 1], [0, 90]);
+  const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
+  const rotateStar = useTransform(scrollYProgress, [0, 1], [0, 90]);
 
   return (
     <section

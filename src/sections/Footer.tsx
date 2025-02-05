@@ -1,12 +1,11 @@
-import logo from "@/assets/logosaas.png";
 import logoWhite from "@/assets/logo-main-white.png";
-import Image from "next/image";
-import Link from "next/link";
-import socialX from "@/assets/social-x.svg";
 import socialInstagram from "@/assets/social-insta.svg";
 import socialLinkedin from "@/assets/social-linkedin.svg";
 import socialPin from "@/assets/social-pin.svg";
+import socialX from "@/assets/social-x.svg";
 import socialYoutube from "@/assets/social-youtube.svg";
+import Image from "next/image";
+import Link from "next/link";
 
 const navLinks = [
   { href: "#", text: "About" },
